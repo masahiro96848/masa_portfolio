@@ -1,0 +1,31 @@
+.p-form {
+  width: 100%;
+
+  &-m {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mq($breakpoint: sm) {
+      width: 80%;
+    }
+  }
+}
+
+.p-input {
+  display: block;
+  box-sizing: border-box;
+  font-size: $font-size_l;
+  color: $font-color_default;
+  border: 3px solid $font-color_sub04;
+
+  &-l {
+    padding: $space_l;
+    width: 100%;
+    margin-bottom: $space_l;
+  }
+
+  &-texrtarea {
+    height: 200px;
+  }
+}

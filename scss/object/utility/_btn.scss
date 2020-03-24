@@ -1,0 +1,12 @@
+.u-btn {
+  width: 100%;
+  padding: $space_l;
+  font-size: $font-size_l;
+  border: none;
+  border-radius: 5px;
+
+  &-corp {
+    background-color: $font-color_corp;
+    box-shadow: 5px 5px 5px  rgba(172, 169, 169, 0.7);
+  }
+}

@@ -1,0 +1,16 @@
+.p-profile {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  // margin-top: $space_100;
+  &-name {
+    font-size: $font-size_xl;
+    // margin-top: $space_100;
+  }
+  &-introduce {
+    margin-top: $space_xxl;
+    line-height: 2.2;
+    font-weight: bold;
+    font-size: $font-size_l;
+  }
+}

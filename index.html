@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MASAPORT</title>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand rel=" stylesheet">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+  <!-- header -->
+  <header class="header js-float-menu">
+    <h1 class="header-title">MASAPORT</h1>
+
+    <div class="u-menu-trigger js-toggle-sp-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- nav -->
+    <nav class="nav-menu js-toggle-sp-menu-target">
+      <ul class="menu">
+        <li class="menu-list"><a class="menu-link" href="">TOP</a></li>
+        <li class="menu-list"><a class="menu-link" href="#about">ABOUT</a></li>
+        <li class="menu-list"><a class="menu-link" href="#skills">SKILLS</a></li>
+        <li class="menu-list"><a class="menu-link" href="#portfolio">PORTFOLIO</a></li>
+        <li class="menu-list"><a class="menu-link" href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- hero -->
+    <section class="p-hero container-fluid js-float-menu-target">
+      <div class="p-hero-article">
+        <h1 class="p-hero-title __engineer js-fadeIn">engineering <br> ✗ <br> business<br></h1> 
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="c-about c-container-ornament js-fadeIn" id="about">
+      <h1 class="c-container-title js-fadeIn"><span class="c-name">ABOUT</span></h1>
+      <div class="p-profile-container">
+        <img src="img/profile.jpeg" alt="" width="300" height="300" class="p-profile">
+        <h2 class="p-profile-name">Masahiro</h2>
+        <p class="p-profile-introduce">
+          フリーターからエンジニアへ<br>
+          失敗を糧に這い上がります! <br>
+          エンジニアリング ×ビジネスに強い人材になります!
+        </p>
+      </div>
+    </section>
+
+    <!-- skills -->
+    <section class="p-skills c-container-ornament " id="skills">
+      <div class="c-container-background">
+        <h1 class="c-container-title c-container-title-mt js-fadeIn "><span class="c-name">SKILLS</span></h1>
+        <div class="p-skill-area js-fadeIn">
+          <div class="p-skill-container">
+            <div class="p-skill-box">
+              <div class="p-skill-head">フロントエンド</div>
+              <div class="p-skill-body">
+                <img src="./img/skill_img01.jpg" alt="">
+                <div class="p-skill-foot">
+                  <p class="p-skill-foot-text">
+                    ◯HTML/CSS(sassを使ってレイアウトができます) <br>
+                    ◯js/Jquery/Vue.js
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="p-skill-box">
+              <div class="p-skill-head">バックエンド</div>
+              <div class="p-skill-body">
+                <img src="./img/skill_img02.jpg" alt="">
+                <div class="p-skill-foot">
+                  <p class="p-skill-foot-text">
+                    ◯php <br>
+                    ◯FWはLaravelをつかっています｡
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="p-skill-box">
+              <div class="p-skill-head">ビジネス・マーケティング</div>
+              <div class="p-skill-body">
+                <img src="./img/skill_img03.jpg" alt="">
+                <div class="p-skill-foot">
+                  <p class="p-skill-foot-text">
+                    ◯ビジネス視点を持って開発ができます｡ <br>
+                    ◯顧客が求めているものを聴いて <br>
+                    利益追求をします｡
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- contact -->
+    <section class="c-contact c-container-ornament js-fadeIn" id="contact">
+      <h1 class="c-container-title"><span class="c-name">CONTACT</span></h1>
+      <div class="p-container-body">
+        <form action="" class="p-form p-form-m">
+          <input type="text" class="p-input p-input-l" placeholder="お名前">
+          <input type="email" class="p-input p-input-l" placeholder="E-mail">
+          <textarea name="" id="" cols="30" rows="10" class="p-input p-input-l p-input-textarea" placeholder="お問い合わせ内容"></textarea>
+          <button class="u-btn u-btn-corp u-btn-l">送信</button>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="./js/app.js"></script>
+</html>

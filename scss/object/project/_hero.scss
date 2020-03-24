@@ -1,0 +1,36 @@
+.p-hero {
+  background-image: url('../img/top_banner01.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 850px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  &-title {
+    font-size: 50px;
+    line-height: 1.6;
+    text-align: center;
+    color: white;
+    margin-right: 200px;
+
+    @include mq($breakpoint: sm) {
+      display: block;
+      margin-right: 40px;
+      margin-left: 0;
+    }
+  }
+
+}
+
+.js-fadeIn {
+  transform: translateY(100px);
+  transition: all 1s;
+  opacity: 0;
+}
+
+.js-fadeIn.animated {
+  opacity: 1;
+}

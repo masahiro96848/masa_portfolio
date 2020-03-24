@@ -1,0 +1,76 @@
+.p-skills {
+  background-image: url('../img/skills.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 800px;
+
+  @include mq($breakpoint: sm) {
+    height: auto;
+  }
+
+  // display: flex;
+  // align-items: center;
+  // justify-content: flex-end;
+}
+
+.p-skill {
+
+  &-area {
+    @include mq() {
+      width: 100%;
+    }
+  }
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 5%;
+    margin-left: 5%;
+
+    @include mq($breakpoint: sm) {
+      margin-left: 0;
+    }
+  }
+
+  &-box {
+    border: 6px solid #ebe9e9;
+    border-radius: 240px 15px 185px 15px / 15px 200px 15px 185px;
+    // margin-top: $space_100;
+    padding: 2em;
+    display: inline-block;
+    box-shadow: 10px 10px 10px 10px rgba(172, 169, 169, 0.7);
+    width: calc(25% - #{$space_l});
+
+    @include mq($breakpoint: sm) {
+      width: 100%;
+      margin-bottom: 100px;
+    }
+
+    // height: 400px;
+  }
+
+  &-head {
+    font-size: $font-size_xl;
+    margin-bottom: $space_l;
+  }
+
+  &-body img {
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(24, 23, 23, 0.65);
+  }
+
+  &-foot {
+    text-align: left;
+
+    &-text {
+      font-size: $font-size_l;
+      line-height: 1.8;
+      margin-top: $space_l;
+    }
+  }
+}

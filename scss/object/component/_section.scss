@@ -1,0 +1,33 @@
+.c-container {
+  &-title {
+    font-size: $font-size_xl;
+    padding: 0.5em 0;
+    border-bottom: solid 5px $font-color_sub02;
+    display: inline-block;
+    margin-bottom: $space_70;
+    &-mt {
+      margin-top: $space_100;
+    }
+  }
+
+  &-title__sub {
+    font-size: $font-size_xl;
+    padding: 0.5em 0;
+    border-bottom: solid 5px $font-color_sub03;
+    padding-top: 100px;
+    display: inline-block;
+  }
+
+  &-ornament {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+
+  &-background {
+    background: rgba(34, 34, 34, 0.7);
+    height: 100%;
+    color: $font-color_sub01;
+  }
+}
